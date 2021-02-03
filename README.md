@@ -5,7 +5,7 @@
 * Client Repo: https://github.com/uimm258/Spaced-Repetition-Client
 * Server Repo: https://github.com/uimm258/Spaced-Repetition-api
 
-An application for learning Chinese words using spaced repetition as the quizzing method. Implements a linked list and sorting algorithm.
+An application for learning Chinese words using spaced repetition as the quizzing method. Implements a linked list and sorting algorithm. Deme user: username:admin, password:pass.
 
 # Stack Used
 
