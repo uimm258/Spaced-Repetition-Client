@@ -1,47 +1,33 @@
-# Spaced Repetition Capstone
+### Spaced Repetition
 
-## Setup
+* Live App: https://spaced-repetition-lime-two.vercel.app/register
+* Database URL: https://stark-temple-37903.herokuapp.com/api
+* Client Repo: https://github.com/uimm258/Spaced-Repetition-Client
+* Server Repo: https://github.com/uimm258/Spaced-Repetition-api
 
-To setup the application
+An application for learning Chinese words using spaced repetition as the quizzing method. Implements a linked list and sorting algorithm.
 
-1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application *Cypress.io* for running browser integration tests
+# Stack Used
 
-The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
+* Client: HTML, CSS, React.Js
+* Server: Express and Node.Js
 
-Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-repetition-api.
+# Description
+Try learning Chinese words using this application that makes use of the spaced repetition method! You'll need to create an account to start learning. When you log in, you'll be shown your dashboard, which will contain the words to learn, correct and incorrect counts for the word, and a total score. Click 'Start practicing' to start learning.
 
-## Running project
+On the learning page, you can guess the english translation of the word and receive feedback. You can also see your total score and the correct and incorrect counts for the word you're viewing. The next word you are quizzed on is given based on whether your guess for it was correct or incorrect. If you guess incorrectly, you'll be quizzed on it again in two turns. Guessing a particular word correctly consecutively, sends the word further down the line, so you'll see it less often (depending on how you do on the other words).
 
-This is a `create-react-app` project so `npm start` will start the project in development mode with hot reloading by default.
+# Screenshots
+* Login-Page
+![Login](./screenshots/login.png)
+* SignUp-Page
+![SignUp](./screenshots/signup.png)
+* Dashboard
+![dashboard](./screenshots/dashboard.png)
+* Learning-Page
+![practice](./screenshots/practice-page.png)
+* Correct-Page
+![correct](./screenshots/correct.png)
+* Incorrect-Page
+![incorrect](./screenshots/incorrect.png)
 
-## Running the tests
-
-This project uses [Cypress IO](https://docs.cypress.io) for integration testing using the Chrome browser.
-
-Cypress has the following expectations:
-
-- You have cypress installed (this is a devDependency of the project)
-- You have your application running at http://localhost:3000.
-  - You can change the address of this expectation in the `./cypress.json` file.
-- Your `./src/config.js` is using http://localhost:8000/api as the `API_ENDPOINT`
-
-To start the tests run the command:
-
-```bash
-npm run cypress:open
-```
-
-On the first run of this command, the cypress application will verify its install. Any other runs after this, the verification will be skipped.
-
-The command will open up the Cypress application which reads tests from the `./cypress/integration/` directory. You can then run individual tests by clicking on the file names or run all tests by clicking the "run all tests" button in the cypress GUI.
-
-Tests will assert against your running localhost client application.
-
-You can also start all of the tests in the command line only (not using the GUI) by running the command:
-
-```bash
-npm run cypress:run
-```
-
-This will save video recordings of the test runs in the directory `./cypress/videos/`.
