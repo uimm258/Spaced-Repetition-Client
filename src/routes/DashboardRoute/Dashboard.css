@@ -1,0 +1,46 @@
+.dashboard {
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    padding-bottom: 100px;;
+    background: url('../../images/background.jpg') no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    top: -20px;
+}
+
+.top-section h2 {
+    font-size: 36px;
+}
+
+.learning-route {
+    font-size: 20px;
+    color: red
+}
+
+.practice-word ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.practice-word li {
+    width: 30%;
+    margin: auto;
+    border: 2px solid grey;
+    display: inline-block;
+    height: 10%
+}
+
+.correct, .incorrect {
+    display: block;
+    font-style: italic;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .dashboard {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}

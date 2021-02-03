@@ -8,9 +8,6 @@ import LoginRoute from '../../routes/LoginRoute/LoginRoute'
 import DashboardRoute from '../../routes/DashboardRoute/DashboardRoute'
 import LearningRoute from '../../routes/LearningRoute/LearningRoute'
 import NotFoundRoute from '../../routes/NotFoundRoute/NotFoundRoute'
-import './App.css'
-import background from '../../images/background.jpg'
-import headerimg from '../../images/headerimg.jpg'
 
 export default class App extends Component {
   state = { hasError: false }
@@ -23,9 +20,10 @@ export default class App extends Component {
   render() {
     const { hasError } = this.state
     return (
-      <div className='App'>
-        <Header style={{ backgroundImage: `url(${headerimg})` }}/>
-        <main style={{ backgroundImage: `url(${background})` }}>
+      <div>
+        <Header />
+
+        <main >
           {hasError && (
             <p>There was an error! Oh no!</p>
           )}

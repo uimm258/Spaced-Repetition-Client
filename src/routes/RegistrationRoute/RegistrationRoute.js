@@ -19,7 +19,7 @@ class RegistrationRoute extends Component {
       <section className='RegistrationRoute'>
         <div className='text'>
           <p>
-            Practice learning a language with the spaced reptition revision technique.
+            Practice learning a language with the spaced repetition revision technique.
           </p>
           <h2>Sign up</h2>
         </div>

@@ -1,0 +1,31 @@
+.learning-page {
+    background-image: url('../../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 69vh;
+}
+
+.learning-content {
+    font-size: 16px;
+    font-family: 'Satisfy', cursive;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.learning-content h2 {
+    font-weight: bold;
+    color: red
+}
+
+.learning-content h3 {
+    font-weight: bold;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: bold;
+}

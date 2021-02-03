@@ -4,9 +4,8 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    /* background-color: rgba(250, 235, 215, 0.767); */
     background-color: rgb(245, 248, 248);
-    filter: drop-shadow(0 0 10px rgb(172, 172, 172));
+    box-shadow: 3px 5px 10px black;
   }
   
   h1{
@@ -40,7 +39,7 @@
     width: 20%;
   }
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 600px){
     .main_header {
       display: flex;
       justify-content: space-between;  
