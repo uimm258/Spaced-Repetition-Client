@@ -1,4 +1,4 @@
-### Spaced Repetition
+# Spaced Repetition
 
 * Live App: https://spaced-repetition-lime-two.vercel.app/register
 * Database URL: https://stark-temple-37903.herokuapp.com/api
