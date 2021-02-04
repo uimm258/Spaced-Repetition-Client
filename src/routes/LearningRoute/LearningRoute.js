@@ -143,17 +143,18 @@ class LearningRoute extends Component {
               />
               <Button type="submit">Submit</Button>
             </form>) : (
-              <Button onClick={this.handleNext}>Next Word</Button>
-            )}
-
-          {!this.state.answer ? (
-            <p>
-              Answered Correctly: {this.state.wordCorrectCount} times
-            </p>) : (
-              <p>
-                Answered Incorrectly: {this.state.wordIncorrectCount} times
-              </p>
-            )}
+            <Button onClick={this.handleNext}>Next Word</Button>
+          )}
+          
+          <div>
+            <p className="word-stats">
+              correct answer count: {this.state.wordCorrectCount} 
+            </p>
+            <p className="word-stats">
+              incorrect answer count: {this.state.wordIncorrectCount} 
+            </p>
+          </div>
+            
         </div>
       </section>
     )
